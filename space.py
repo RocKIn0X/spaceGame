@@ -36,6 +36,8 @@ class SpaceGameWindow(arcade.Window):
         self.ship_sprite.draw()
         self.gold_sprite.draw()
 
+        arcade.draw_text(str(self.world.score), self.width - 30, self.height - 30, arcade.color.WHITE, 20)
+
     def animate(self, delta):
         self.world.animate(delta)
 
